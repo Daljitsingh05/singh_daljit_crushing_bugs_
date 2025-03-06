@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drag and Drop Puzzle Game</title>
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
     <button id="resetButton" aria-label="Reset Puzzle">Reset</button>
 
     <header>
-        <h1>Drag and Drop!</h1>
-        <p>Solve the puzzle</p>
+      <h1>Drag and Drop!</h1>
+      <p>Solve the puzzle</p>
     </header>
 
     <main id="game-container">
-        <!-- Draggable puzzle pieces -->
-        <section class="puzzle-pieces">
-            <img src="images/topLeft0.jpg" class="puzzle-piece" alt="Top Left Piece" draggable="true">
-            <img src="images/topRight0.jpg" class="puzzle-piece" alt="Top Right Piece" draggable="true">
-            <img src="images/bottomLeft0.jpg" class="puzzle-piece" alt="Bottom Left Piece" draggable="true">
-            <img src="images/bottomRight0.jpg" class="puzzle-piece" alt="Bottom Right Piece" draggable="true">
-        </section>
+      <section class="puzzle-pieces">
+        <img
+          src="images/topLeft0.jpg"
+          class="puzzle-piece"
+          alt="Top Left Piece"
+          draggable="true"
+        />
+        <img
+          src="images/topRight0.jpg"
+          class="puzzle-piece"
+          alt="Top Right Piece"
+          draggable="true"
+        />
+        <img
+          src="images/bottomLeft0.jpg"
+          class="puzzle-piece"
+          alt="Bottom Left Piece"
+          draggable="true"
+        />
+        <img
+          src="images/bottomRight0.jpg"
+          class="puzzle-piece"
+          alt="Bottom Right Piece"
+          draggable="true"
+        />
+      </section>
 
-        <!-- Drop zones for puzzle pieces -->
-        <section class="puzzle-board">
-            <div class="drop-zone" data-position="top-left"></div>
-            <div class="drop-zone" data-position="top-right"></div>
-            <div class="drop-zone" data-position="bottom-left"></div>
-            <div class="drop-zone" data-position="bottom-right"></div>
-        </section>
+      <section class="puzzle-board">
+        <div class="drop-zone" data-position="top-left"></div>
+        <div class="drop-zone" data-position="top-right"></div>
+        <div class="drop-zone" data-position="bottom-left"></div>
+        <div class="drop-zone" data-position="bottom-right"></div>
+      </section>
     </main>
 
     <footer>
-        <p>Click a thumbnail to change pieces!</p>
-        <nav id="thumbnail-container">
-            <img src="images/buttonZero.jpg" class="thumbnail" data-id="0" alt="Thumbnail 0">
-            <img src="images/buttonOne.jpg" class="thumbnail" data-id="1" alt="Thumbnail 1">
-            <img src="images/buttonTwo.jpg" class="thumbnail" data-id="2" alt="Thumbnail 2">
-            <img src="images/buttonThree.jpg" class="thumbnail" data-id="3" alt="Thumbnail 3">
-        </nav>
+      <p>Click a thumbnail to change pieces!</p>
+      <nav id="thumbnail-container">
+        <img
+          src="images/buttonZero.jpg"
+          class="thumbnail"
+          data-id="0"
+          alt="Thumbnail 0"
+        />
+        <img
+          src="images/buttonOne.jpg"
+          class="thumbnail"
+          data-id="1"
+          alt="Thumbnail 1"
+        />
+        <img
+          src="images/buttonTwo.jpg"
+          class="thumbnail"
+          data-id="2"
+          alt="Thumbnail 2"
+        />
+        <img
+          src="images/buttonThree.jpg"
+          class="thumbnail"
+          data-id="3"
+          alt="Thumbnail 3"
+        />
+      </nav>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
